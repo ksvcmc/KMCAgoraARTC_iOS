@@ -4,14 +4,20 @@
 
 
 ## 集成
-下载demo, 执行
+
+客户可以先行下载demo, 执行
 ```
 pod install
 ```
-打开KMCAgoraVRTCDemo.xcworkspace演示demo查看效果
+打开KMCAgoraARTCDemo.xcworkspace演示demo查看效果
 
-将KMCAgoraVRTC.framework添加进自己的工程用于集成
+- 手动集成
+将KMCAgoraARTC.framework拖进工程，切换到xcode的**General**->**Embedded Binaries**位置，添加KMCAgoraARTC.framework即可
 
+- Cocoapod集成
+```
+pod 'KMCAgoraARTC'
+```
 
 ## SDK使用指南  
 
