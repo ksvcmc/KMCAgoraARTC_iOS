@@ -1,7 +1,8 @@
 # 金山魔方语音连麦API文档
 ## 项目背景
 金山魔方是一个多媒体能力提供平台，通过统一接入API、统一鉴权、统一计费等多种手段，降低客户接入多媒体处理能力的代价，提供多媒体能力供应商的效率。 本文档主要针对多人语音连麦功能而说明。
-
+## 效果展示
+![Alt text](https://raw.githubusercontent.com/wiki/ksvcmc/KMCAgoraARTC_iOS/img.jpg)
 ## 鉴权
 SDK在使用时需要用token进行鉴权后方可使用，token申请方式见**接入步骤**部分;  
 token与应用包名为一一对应的关系;
