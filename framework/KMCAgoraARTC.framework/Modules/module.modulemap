@@ -1,0 +1,6 @@
+framework module KMCAgoraARTC {
+  umbrella header "KMCAgoraARTC.h"
+
+  export *
+  module * { export * }
+}
