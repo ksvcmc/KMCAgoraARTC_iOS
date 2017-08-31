@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4754FFB06A3B977777D15749 /* libPods-KMCAgoraARTCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2734896391CC5CD59888B59 /* libPods-KMCAgoraARTCDemo.a */; };
-		9500048D1F34126C005E6FCA /* KMCAgoraARTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950004871F341053005E6FCA /* KMCAgoraARTC.framework */; };
-		9500048E1F34126C005E6FCA /* KMCAgoraARTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 950004871F341053005E6FCA /* KMCAgoraARTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		948B23ECB8966DEB9D92FED0 /* libPods-KMCAgoraARTCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E385C21AE84A5B7154D649 /* libPods-KMCAgoraARTCDemo.a */; };
 		9556E32B1F25CBE200584119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E30F1F25CBE100584119 /* AppDelegate.m */; };
 		9556E32C1F25CBE200584119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9556E3101F25CBE100584119 /* Assets.xcassets */; };
 		9556E32D1F25CBE200584119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9556E3111F25CBE100584119 /* LaunchScreen.storyboard */; };
@@ -24,6 +22,7 @@
 		9556E3361F25CBE200584119 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E3251F25CBE200584119 /* RootViewController.m */; };
 		9556E3371F25CBE200584119 /* SpectatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E3271F25CBE200584119 /* SpectatorViewController.m */; };
 		9556E3381F25CBE200584119 /* CallInButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E32A1F25CBE200584119 /* CallInButton.m */; };
+		F212074F1F57E62A004405DD /* KMCAgoraARTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F212074E1F57E62A004405DD /* KMCAgoraARTC.framework */; };
 		F27BC54C1F502B6B0084EBDD /* KMCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC54B1F502B6B0084EBDD /* KMCNetwork.m */; };
 		F27BC54F1F502CFD0084EBDD /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC54E1F502CFD0084EBDD /* UIColor+Expanded.m */; };
 		F27BC5521F502D0F0084EBDD /* NemoAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC5511F502D0F0084EBDD /* NemoAboutView.m */; };
@@ -41,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9500048E1F34126C005E6FCA /* KMCAgoraARTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,8 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		58471B9CE24FF916916AC74D /* Pods-KMCAgoraARTCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCAgoraARTCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo.release.xcconfig"; sourceTree = "<group>"; };
-		950004871F341053005E6FCA /* KMCAgoraARTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMCAgoraARTC.framework; path = ../../framework/KMCAgoraARTC.framework; sourceTree = "<group>"; };
+		02C3C447C61A2263B94A98CF /* Pods-KMCAgoraARTCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCAgoraARTCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9556E30E1F25CBE100584119 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9556E30F1F25CBE100584119 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9556E3101F25CBE100584119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,8 +85,9 @@
 		95C903661F0E086800AC1FAA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		95C903681F0E086E00AC1FAA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		95C9036A1F0E089B00AC1FAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B2734896391CC5CD59888B59 /* libPods-KMCAgoraARTCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KMCAgoraARTCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7BE9232A3780E5193F53414 /* Pods-KMCAgoraARTCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCAgoraARTCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A7E385C21AE84A5B7154D649 /* libPods-KMCAgoraARTCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KMCAgoraARTCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DA9307E4500294BCBE547D /* Pods-KMCAgoraARTCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCAgoraARTCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F212074E1F57E62A004405DD /* KMCAgoraARTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMCAgoraARTC.framework; path = ../../framework/KMCAgoraARTC.framework; sourceTree = "<group>"; };
 		F27BC54A1F502B6B0084EBDD /* KMCNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCNetwork.h; sourceTree = "<group>"; };
 		F27BC54B1F502B6B0084EBDD /* KMCNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCNetwork.m; sourceTree = "<group>"; };
 		F27BC54D1F502CFD0084EBDD /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
@@ -111,8 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9500048D1F34126C005E6FCA /* KMCAgoraARTC.framework in Frameworks */,
-				4754FFB06A3B977777D15749 /* libPods-KMCAgoraARTCDemo.a in Frameworks */,
+				F212074F1F57E62A004405DD /* KMCAgoraARTC.framework in Frameworks */,
+				948B23ECB8966DEB9D92FED0 /* libPods-KMCAgoraARTCDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +120,7 @@
 		0BF331484BE4569406E340A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F212074E1F57E62A004405DD /* KMCAgoraARTC.framework */,
 				95C9036A1F0E089B00AC1FAA /* CoreGraphics.framework */,
 				95C903681F0E086E00AC1FAA /* CoreMotion.framework */,
 				95C903661F0E086800AC1FAA /* CoreTelephony.framework */,
@@ -135,9 +134,18 @@
 				95C903561F0E062D00AC1FAA /* CoreVideo.framework */,
 				95C903541F0E05BC00AC1FAA /* VideoToolbox.framework */,
 				95C903421F0CFE2A00AC1FAA /* libstdc++.tbd */,
-				B2734896391CC5CD59888B59 /* libPods-KMCAgoraARTCDemo.a */,
+				A7E385C21AE84A5B7154D649 /* libPods-KMCAgoraARTCDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		373AED4DB3A9D9C5BF467447 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02C3C447C61A2263B94A98CF /* Pods-KMCAgoraARTCDemo.debug.xcconfig */,
+				D7DA9307E4500294BCBE547D /* Pods-KMCAgoraARTCDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9556E30D1F25CBE100584119 /* AgoraARTCDemo */ = {
@@ -213,11 +221,10 @@
 		95C902211F0CCA0500AC1FAA = {
 			isa = PBXGroup;
 			children = (
-				950004871F341053005E6FCA /* KMCAgoraARTC.framework */,
 				9556E30D1F25CBE100584119 /* AgoraARTCDemo */,
 				95C9022B1F0CCA0500AC1FAA /* Products */,
 				0BF331484BE4569406E340A0 /* Frameworks */,
-				C07F63921B55398FEEF9283D /* Pods */,
+				373AED4DB3A9D9C5BF467447 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,15 +234,6 @@
 				95C902751F0CCADE00AC1FAA /* KMCAgoraARTCDemo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C07F63921B55398FEEF9283D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C7BE9232A3780E5193F53414 /* Pods-KMCAgoraARTCDemo.debug.xcconfig */,
-				58471B9CE24FF916916AC74D /* Pods-KMCAgoraARTCDemo.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		F27BC5491F502B6B0084EBDD /* KMCNetwork */ = {
@@ -275,13 +273,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95C902891F0CCADE00AC1FAA /* Build configuration list for PBXNativeTarget "KMCAgoraARTCDemo" */;
 			buildPhases = (
-				81590A4AE1B987E2959123A7 /* [CP] Check Pods Manifest.lock */,
+				34195EF45100810994521C54 /* [CP] Check Pods Manifest.lock */,
 				95C902711F0CCADE00AC1FAA /* Sources */,
 				95C902721F0CCADE00AC1FAA /* Frameworks */,
 				95C902731F0CCADE00AC1FAA /* Resources */,
 				9556E3431F25CD5700584119 /* Embed Frameworks */,
-				DB68DEB442E447FC26D60614 /* [CP] Embed Pods Frameworks */,
-				7699265E557A108365AF0C84 /* [CP] Copy Pods Resources */,
+				DC631176BE7221994906D9F1 /* [CP] Embed Pods Frameworks */,
+				DA5B2E2AE0E13641E82C962E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,7 +301,7 @@
 				TargetAttributes = {
 					95C902741F0CCADE00AC1FAA = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = ZGJ54Q7R45;
+						DevelopmentTeam = 36PUU93BJ2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -347,22 +345,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7699265E557A108365AF0C84 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81590A4AE1B987E2959123A7 /* [CP] Check Pods Manifest.lock */ = {
+		34195EF45100810994521C54 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,7 +360,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DB68DEB442E447FC26D60614 /* [CP] Embed Pods Frameworks */ = {
+		DA5B2E2AE0E13641E82C962E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC631176BE7221994906D9F1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -535,13 +533,13 @@
 		};
 		95C9028A1F0CCADE00AC1FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7BE9232A3780E5193F53414 /* Pods-KMCAgoraARTCDemo.debug.xcconfig */;
+			baseConfigurationReference = 02C3C447C61A2263B94A98CF /* Pods-KMCAgoraARTCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = ZGJ54Q7R45;
+				DEVELOPMENT_TEAM = 36PUU93BJ2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../framework",
@@ -557,12 +555,12 @@
 		};
 		95C9028B1F0CCADE00AC1FAA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58471B9CE24FF916916AC74D /* Pods-KMCAgoraARTCDemo.release.xcconfig */;
+			baseConfigurationReference = D7DA9307E4500294BCBE547D /* Pods-KMCAgoraARTCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				DEVELOPMENT_TEAM = ZGJ54Q7R45;
+				DEVELOPMENT_TEAM = 36PUU93BJ2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../framework",
