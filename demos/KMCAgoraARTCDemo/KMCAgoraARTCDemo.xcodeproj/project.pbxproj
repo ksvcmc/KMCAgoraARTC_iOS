@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		22643665A9D59F56BBDDAF36 /* libPods-KMCAgoraARTCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8617602433BFFD6B5A349D6E /* libPods-KMCAgoraARTCDemo.a */; };
-		9500048D1F34126C005E6FCA /* KMCAgoraARTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950004871F341053005E6FCA /* KMCAgoraARTC.framework */; };
-		9500048E1F34126C005E6FCA /* KMCAgoraARTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 950004871F341053005E6FCA /* KMCAgoraARTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9556E32B1F25CBE200584119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E30F1F25CBE100584119 /* AppDelegate.m */; };
 		9556E32C1F25CBE200584119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9556E3101F25CBE100584119 /* Assets.xcassets */; };
 		9556E32D1F25CBE200584119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9556E3111F25CBE100584119 /* LaunchScreen.storyboard */; };
@@ -24,6 +22,7 @@
 		9556E3361F25CBE200584119 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E3251F25CBE200584119 /* RootViewController.m */; };
 		9556E3371F25CBE200584119 /* SpectatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E3271F25CBE200584119 /* SpectatorViewController.m */; };
 		9556E3381F25CBE200584119 /* CallInButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E32A1F25CBE200584119 /* CallInButton.m */; };
+		F21207601F57FAA2004405DD /* KMCAgoraARTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F212075F1F57FAA2004405DD /* KMCAgoraARTC.framework */; };
 		F27BC54C1F502B6B0084EBDD /* KMCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC54B1F502B6B0084EBDD /* KMCNetwork.m */; };
 		F27BC54F1F502CFD0084EBDD /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC54E1F502CFD0084EBDD /* UIColor+Expanded.m */; };
 		F27BC5521F502D0F0084EBDD /* NemoAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC5511F502D0F0084EBDD /* NemoAboutView.m */; };
@@ -34,23 +33,8 @@
 		F27BC5631F540D220084EBDD /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = F27BC5601F540D220084EBDD /* README.mdown */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9556E3431F25CD5700584119 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9500048E1F34126C005E6FCA /* KMCAgoraARTC.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		8617602433BFFD6B5A349D6E /* libPods-KMCAgoraARTCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KMCAgoraARTCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		950004871F341053005E6FCA /* KMCAgoraARTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMCAgoraARTC.framework; path = ../../framework/KMCAgoraARTC.framework; sourceTree = "<group>"; };
 		9556E30E1F25CBE100584119 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9556E30F1F25CBE100584119 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9556E3101F25CBE100584119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +73,7 @@
 		95C903681F0E086E00AC1FAA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		95C9036A1F0E089B00AC1FAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A2C0E04DC8CDD5464238ACB0 /* Pods-KMCAgoraARTCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCAgoraARTCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F212075F1F57FAA2004405DD /* KMCAgoraARTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMCAgoraARTC.framework; path = ../../framework/KMCAgoraARTC.framework; sourceTree = "<group>"; };
 		F27BC54A1F502B6B0084EBDD /* KMCNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCNetwork.h; sourceTree = "<group>"; };
 		F27BC54B1F502B6B0084EBDD /* KMCNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCNetwork.m; sourceTree = "<group>"; };
 		F27BC54D1F502CFD0084EBDD /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
@@ -111,8 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9500048D1F34126C005E6FCA /* KMCAgoraARTC.framework in Frameworks */,
 				22643665A9D59F56BBDDAF36 /* libPods-KMCAgoraARTCDemo.a in Frameworks */,
+				F21207601F57FAA2004405DD /* KMCAgoraARTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +198,7 @@
 		95C902211F0CCA0500AC1FAA = {
 			isa = PBXGroup;
 			children = (
-				950004871F341053005E6FCA /* KMCAgoraARTC.framework */,
+				F212075F1F57FAA2004405DD /* KMCAgoraARTC.framework */,
 				9556E30D1F25CBE100584119 /* AgoraARTCDemo */,
 				95C9022B1F0CCA0500AC1FAA /* Products */,
 				0BF331484BE4569406E340A0 /* Frameworks */,
@@ -279,7 +264,6 @@
 				95C902711F0CCADE00AC1FAA /* Sources */,
 				95C902721F0CCADE00AC1FAA /* Frameworks */,
 				95C902731F0CCADE00AC1FAA /* Resources */,
-				9556E3431F25CD5700584119 /* Embed Frameworks */,
 				D49A6873E613A64C2F9FECD6 /* [CP] Embed Pods Frameworks */,
 				42706B8E9B06AE7CBAD5ACAC /* [CP] Copy Pods Resources */,
 			);
