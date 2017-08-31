@@ -8,10 +8,8 @@ target 'KMCAgoraARTCDemo' do
   # use_frameworks!
 
   # Pods for AgoraVRTCDemo
-  pod 'MBProgressHUD'
   pod 'libksygpulive/KSYGPUResource'
   pod 'libksygpulive/libksygpulive'
-  pod 'MBProgressHUD'
   pod 'Masonry'
 
 end

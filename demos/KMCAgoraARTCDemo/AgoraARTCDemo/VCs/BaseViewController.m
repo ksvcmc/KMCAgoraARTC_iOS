@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 #import <Masonry/Masonry.h>
-#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD.h"
 #import "KMCNetwork.h"
 #import "NSString+Add.h"
 @interface BaseViewController ()
@@ -218,16 +218,14 @@
     //leave room
     NSString *uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     NSString *roomName = [self.data valueForKey:@"roomName"];
-    [[KMCNetwork sharedInst] leaveRoom:@{@"roomName":roomName, @"userId":uuid} successBlk:^(NSDictionary *data) {
+    NSNumber* roomId = [self.data valueForKey:@"roomId"];
+    [[KMCNetwork sharedInst] leaveRoom:@{@"roomName":roomName, @"userId":uuid,@"roomId":roomId} successBlk:^(NSDictionary *data) {
         
     } OnFailure:^(NSError *error) {
         //TODO
-        NSLog(@"leave error:%@", error.localizedDescription);
+        NSLog(@"join error:%@", error.localizedDescription);
     }];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self dismissViewControllerAnimated:YES completion:nil];
-    });
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)onLiveCount:(NSTimer *)timer
@@ -241,9 +239,11 @@
 - (void)onQueryChatList:(NSTimer *)timer
 {
     NSString *roomName = [self.data valueForKey:@"roomName"];
+    NSNumber *roomId = [self.data valueForKey:@"roomId"];
+
     if (roomName && roomName.length > 0){
         __weak typeof(self) weakSelf = self;
-        [[KMCNetwork sharedInst] fetchChatListWithRoomName:roomName successBlk:^(NSDictionary *data) {
+        [[KMCNetwork sharedInst] fetchChatListWithRoomName:roomName roomId:roomId successBlk:^(NSDictionary *data) {
             if ([[data valueForKey:@"isClose"] integerValue]){
                 //room not exist, all viewers should be kicked out
                 [weakSelf onClose];

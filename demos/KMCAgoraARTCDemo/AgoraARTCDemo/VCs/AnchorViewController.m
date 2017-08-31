@@ -7,7 +7,7 @@
 //
 
 #import "AnchorViewController.h"
-#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD.h"
 #import <KMCAgoraARTC/KMCAgoraARTC.h>
 #import "KMCAgoraStreamerKit.h"
 #import "KMCNetwork.h"
@@ -17,6 +17,8 @@
 @interface AnchorViewController ()<KMCRtcDelegate>
 {
     NSString *_roomName;
+    NSString       * _streamId;
+    NSNumber * _roomId;
     BOOL      _isStreamStarted;
 }
 
@@ -35,7 +37,10 @@
         _kit = [[KMCAgoraStreamerKit alloc] initWithDefaultCfg:self];
         NSLog(@"version:%@", [_kit getKSYVersion]);
         _roomName = [data valueForKey:@"roomName"];
-        self.streamUrl = [NSURL URLWithString:[NSString stringWithFormat:@"rtmp://test.uplive.ks-cdn.com/live/%@", _roomName]];
+        _roomId = [data valueForKey:@"roomId"];
+        NSNumber* streamID =[data valueForKey:@"streamId"];
+        _streamId = [NSString stringWithFormat:@"%ld",(long)streamID.integerValue];
+        self.streamUrl = [NSURL URLWithString:[NSString stringWithFormat:@"rtmp://test.uplive.ks-cdn.com/live/%@", _streamId]];
     }
     return self;
 }
@@ -77,7 +82,8 @@
     NSString *uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     [[KMCNetwork sharedInst] kickUser:@{@"roomName":_roomName,
                                        @"userId":sender.extra,
-                                       @"anchorId":uuid
+                                       @"anchorId":uuid,
+                                        @"roomId":_roomId
                                        }
     successBlk:^(NSDictionary *data) {
                                            //
@@ -182,7 +188,7 @@
     _isStreamStarted = TRUE;
     
     //start to create a rtc room
-    [_kit joinChannel:_roomName];
+    [_kit joinChannel:_streamId];
     
 }
 

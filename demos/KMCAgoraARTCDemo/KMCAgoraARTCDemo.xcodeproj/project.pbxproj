@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4754FFB06A3B977777D15749 /* libPods-KMCAgoraARTCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2734896391CC5CD59888B59 /* libPods-KMCAgoraARTCDemo.a */; };
 		9500048D1F34126C005E6FCA /* KMCAgoraARTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950004871F341053005E6FCA /* KMCAgoraARTC.framework */; };
 		9500048E1F34126C005E6FCA /* KMCAgoraARTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 950004871F341053005E6FCA /* KMCAgoraARTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9556E32B1F25CBE200584119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E30F1F25CBE100584119 /* AppDelegate.m */; };
@@ -23,8 +24,14 @@
 		9556E3361F25CBE200584119 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E3251F25CBE200584119 /* RootViewController.m */; };
 		9556E3371F25CBE200584119 /* SpectatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E3271F25CBE200584119 /* SpectatorViewController.m */; };
 		9556E3381F25CBE200584119 /* CallInButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E32A1F25CBE200584119 /* CallInButton.m */; };
-		9556E33C1F25CC6C00584119 /* KMCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E33B1F25CC6C00584119 /* KMCNetwork.m */; };
-		9556E33E1F25CCBC00584119 /* KMCAgoraStreamerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556E33D1F25CCBC00584119 /* KMCAgoraStreamerKit.m */; };
+		F27BC54C1F502B6B0084EBDD /* KMCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC54B1F502B6B0084EBDD /* KMCNetwork.m */; };
+		F27BC54F1F502CFD0084EBDD /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC54E1F502CFD0084EBDD /* UIColor+Expanded.m */; };
+		F27BC5521F502D0F0084EBDD /* NemoAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC5511F502D0F0084EBDD /* NemoAboutView.m */; };
+		F27BC5561F502D630084EBDD /* KMCAgoraStreamerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC5551F502D630084EBDD /* KMCAgoraStreamerKit.m */; };
+		F27BC5591F502EAA0084EBDD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC5581F502EAA0084EBDD /* ChatViewController.m */; };
+		F27BC5611F540D220084EBDD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F27BC55D1F540D220084EBDD /* LICENSE */; };
+		F27BC5621F540D220084EBDD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BC55F1F540D220084EBDD /* MBProgressHUD.m */; };
+		F27BC5631F540D220084EBDD /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = F27BC5601F540D220084EBDD /* README.mdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,8 +49,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		58471B9CE24FF916916AC74D /* Pods-KMCAgoraARTCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCAgoraARTCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		950004871F341053005E6FCA /* KMCAgoraARTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMCAgoraARTC.framework; path = ../../framework/KMCAgoraARTC.framework; sourceTree = "<group>"; };
-		9556E30B1F25CBCD00584119 /* KMCAgoraStreamerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCAgoraStreamerKit.h; sourceTree = "<group>"; };
 		9556E30E1F25CBE100584119 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9556E30F1F25CBE100584119 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9556E3101F25CBE100584119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,9 +74,6 @@
 		9556E3271F25CBE200584119 /* SpectatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpectatorViewController.m; sourceTree = "<group>"; };
 		9556E3291F25CBE200584119 /* CallInButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallInButton.h; sourceTree = "<group>"; };
 		9556E32A1F25CBE200584119 /* CallInButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallInButton.m; sourceTree = "<group>"; };
-		9556E33A1F25CC6C00584119 /* KMCNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCNetwork.h; sourceTree = "<group>"; };
-		9556E33B1F25CC6C00584119 /* KMCNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCNetwork.m; sourceTree = "<group>"; };
-		9556E33D1F25CCBC00584119 /* KMCAgoraStreamerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCAgoraStreamerKit.m; sourceTree = "<group>"; };
 		95C902751F0CCADE00AC1FAA /* KMCAgoraARTCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMCAgoraARTCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C903421F0CFE2A00AC1FAA /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		95C903541F0E05BC00AC1FAA /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
@@ -84,6 +88,22 @@
 		95C903661F0E086800AC1FAA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		95C903681F0E086E00AC1FAA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		95C9036A1F0E089B00AC1FAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B2734896391CC5CD59888B59 /* libPods-KMCAgoraARTCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KMCAgoraARTCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7BE9232A3780E5193F53414 /* Pods-KMCAgoraARTCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMCAgoraARTCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F27BC54A1F502B6B0084EBDD /* KMCNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCNetwork.h; sourceTree = "<group>"; };
+		F27BC54B1F502B6B0084EBDD /* KMCNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCNetwork.m; sourceTree = "<group>"; };
+		F27BC54D1F502CFD0084EBDD /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
+		F27BC54E1F502CFD0084EBDD /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
+		F27BC5501F502D0F0084EBDD /* NemoAboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NemoAboutView.h; sourceTree = "<group>"; };
+		F27BC5511F502D0F0084EBDD /* NemoAboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NemoAboutView.m; sourceTree = "<group>"; };
+		F27BC5541F502D630084EBDD /* KMCAgoraStreamerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCAgoraStreamerKit.h; sourceTree = "<group>"; };
+		F27BC5551F502D630084EBDD /* KMCAgoraStreamerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCAgoraStreamerKit.m; sourceTree = "<group>"; };
+		F27BC5571F502EAA0084EBDD /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		F27BC5581F502EAA0084EBDD /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		F27BC55D1F540D220084EBDD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F27BC55E1F540D220084EBDD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F27BC55F1F540D220084EBDD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F27BC5601F540D220084EBDD /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9500048D1F34126C005E6FCA /* KMCAgoraARTC.framework in Frameworks */,
+				4754FFB06A3B977777D15749 /* libPods-KMCAgoraARTCDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +135,7 @@
 				95C903561F0E062D00AC1FAA /* CoreVideo.framework */,
 				95C903541F0E05BC00AC1FAA /* VideoToolbox.framework */,
 				95C903421F0CFE2A00AC1FAA /* libstdc++.tbd */,
+				B2734896391CC5CD59888B59 /* libPods-KMCAgoraARTCDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,6 +143,8 @@
 		9556E30D1F25CBE100584119 /* AgoraARTCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F27BC5531F502D630084EBDD /* Shared */,
+				F27BC5491F502B6B0084EBDD /* KMCNetwork */,
 				9556E30E1F25CBE100584119 /* AppDelegate.h */,
 				9556E30F1F25CBE100584119 /* AppDelegate.m */,
 				9556E3101F25CBE100584119 /* Assets.xcassets */,
@@ -139,6 +163,8 @@
 		9556E3151F25CBE100584119 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F27BC54D1F502CFD0084EBDD /* UIColor+Expanded.h */,
+				F27BC54E1F502CFD0084EBDD /* UIColor+Expanded.m */,
 				9556E3161F25CBE100584119 /* NSString+Add.h */,
 				9556E3171F25CBE100584119 /* NSString+Add.m */,
 				9556E3181F25CBE100584119 /* UIImage+Ext.h */,
@@ -159,6 +185,8 @@
 		9556E31F1F25CBE100584119 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				F27BC5571F502EAA0084EBDD /* ChatViewController.h */,
+				F27BC5581F502EAA0084EBDD /* ChatViewController.m */,
 				9556E3201F25CBE100584119 /* AnchorViewController.h */,
 				9556E3211F25CBE100584119 /* AnchorViewController.m */,
 				9556E3221F25CBE200584119 /* BaseViewController.h */,
@@ -174,30 +202,22 @@
 		9556E3281F25CBE200584119 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F27BC5501F502D0F0084EBDD /* NemoAboutView.h */,
+				F27BC5511F502D0F0084EBDD /* NemoAboutView.m */,
 				9556E3291F25CBE200584119 /* CallInButton.h */,
 				9556E32A1F25CBE200584119 /* CallInButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9556E3391F25CC6C00584119 /* KMCNetwork */ = {
-			isa = PBXGroup;
-			children = (
-				9556E33A1F25CC6C00584119 /* KMCNetwork.h */,
-				9556E33B1F25CC6C00584119 /* KMCNetwork.m */,
-			);
-			path = KMCNetwork;
-			sourceTree = "<group>";
-		};
 		95C902211F0CCA0500AC1FAA = {
 			isa = PBXGroup;
 			children = (
 				950004871F341053005E6FCA /* KMCAgoraARTC.framework */,
-				9556E3391F25CC6C00584119 /* KMCNetwork */,
 				9556E30D1F25CBE100584119 /* AgoraARTCDemo */,
-				95C902FB1F0CD48D00AC1FAA /* Shared */,
 				95C9022B1F0CCA0500AC1FAA /* Products */,
 				0BF331484BE4569406E340A0 /* Frameworks */,
+				C07F63921B55398FEEF9283D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,13 +229,43 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		95C902FB1F0CD48D00AC1FAA /* Shared */ = {
+		C07F63921B55398FEEF9283D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9556E33D1F25CCBC00584119 /* KMCAgoraStreamerKit.m */,
-				9556E30B1F25CBCD00584119 /* KMCAgoraStreamerKit.h */,
+				C7BE9232A3780E5193F53414 /* Pods-KMCAgoraARTCDemo.debug.xcconfig */,
+				58471B9CE24FF916916AC74D /* Pods-KMCAgoraARTCDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F27BC5491F502B6B0084EBDD /* KMCNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				F27BC54A1F502B6B0084EBDD /* KMCNetwork.h */,
+				F27BC54B1F502B6B0084EBDD /* KMCNetwork.m */,
+			);
+			path = KMCNetwork;
+			sourceTree = "<group>";
+		};
+		F27BC5531F502D630084EBDD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F27BC5541F502D630084EBDD /* KMCAgoraStreamerKit.h */,
+				F27BC5551F502D630084EBDD /* KMCAgoraStreamerKit.m */,
+				F27BC55C1F540D220084EBDD /* MBProgressHUD */,
 			);
 			path = Shared;
+			sourceTree = SOURCE_ROOT;
+		};
+		F27BC55C1F540D220084EBDD /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F27BC55D1F540D220084EBDD /* LICENSE */,
+				F27BC55E1F540D220084EBDD /* MBProgressHUD.h */,
+				F27BC55F1F540D220084EBDD /* MBProgressHUD.m */,
+				F27BC5601F540D220084EBDD /* README.mdown */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,10 +275,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95C902891F0CCADE00AC1FAA /* Build configuration list for PBXNativeTarget "KMCAgoraARTCDemo" */;
 			buildPhases = (
+				81590A4AE1B987E2959123A7 /* [CP] Check Pods Manifest.lock */,
 				95C902711F0CCADE00AC1FAA /* Sources */,
 				95C902721F0CCADE00AC1FAA /* Frameworks */,
 				95C902731F0CCADE00AC1FAA /* Resources */,
 				9556E3431F25CD5700584119 /* Embed Frameworks */,
+				DB68DEB442E447FC26D60614 /* [CP] Embed Pods Frameworks */,
+				7699265E557A108365AF0C84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,28 +340,82 @@
 				9556E32E1F25CBE200584119 /* Main.storyboard in Resources */,
 				9556E32C1F25CBE200584119 /* Assets.xcassets in Resources */,
 				9556E32D1F25CBE200584119 /* LaunchScreen.storyboard in Resources */,
+				F27BC5611F540D220084EBDD /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7699265E557A108365AF0C84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81590A4AE1B987E2959123A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB68DEB442E447FC26D60614 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KMCAgoraARTCDemo/Pods-KMCAgoraARTCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95C902711F0CCADE00AC1FAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27BC5521F502D0F0084EBDD /* NemoAboutView.m in Sources */,
 				9556E3331F25CBE200584119 /* main.m in Sources */,
+				F27BC5591F502EAA0084EBDD /* ChatViewController.m in Sources */,
 				9556E3341F25CBE200584119 /* AnchorViewController.m in Sources */,
 				9556E3361F25CBE200584119 /* RootViewController.m in Sources */,
 				9556E3311F25CBE200584119 /* UIView+Ext.m in Sources */,
 				9556E3301F25CBE200584119 /* UIImage+Ext.m in Sources */,
-				9556E33C1F25CC6C00584119 /* KMCNetwork.m in Sources */,
+				F27BC54C1F502B6B0084EBDD /* KMCNetwork.m in Sources */,
+				F27BC5631F540D220084EBDD /* README.mdown in Sources */,
+				F27BC54F1F502CFD0084EBDD /* UIColor+Expanded.m in Sources */,
+				F27BC5561F502D630084EBDD /* KMCAgoraStreamerKit.m in Sources */,
 				9556E32B1F25CBE200584119 /* AppDelegate.m in Sources */,
 				9556E3381F25CBE200584119 /* CallInButton.m in Sources */,
-				9556E33E1F25CCBC00584119 /* KMCAgoraStreamerKit.m in Sources */,
 				9556E3371F25CBE200584119 /* SpectatorViewController.m in Sources */,
 				9556E3351F25CBE200584119 /* BaseViewController.m in Sources */,
 				9556E32F1F25CBE200584119 /* NSString+Add.m in Sources */,
+				F27BC5621F540D220084EBDD /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +535,7 @@
 		};
 		95C9028A1F0CCADE00AC1FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7BE9232A3780E5193F53414 /* Pods-KMCAgoraARTCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -449,6 +557,7 @@
 		};
 		95C9028B1F0CCADE00AC1FAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58471B9CE24FF916916AC74D /* Pods-KMCAgoraARTCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
