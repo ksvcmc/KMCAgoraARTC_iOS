@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "KMCAgoraARTC"
-  s.version      = "1.2.1"
+  s.version      = "1.2.2"
   s.summary      = "金山魔方语音连麦方案"
   s.ios.deployment_target = "8.0"
   s.description  = <<-DESC
@@ -28,4 +28,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ksvcmc/KMCAgoraARTC_iOS.git", :tag => "v#{s.version}" }
 
   s.vendored_frameworks = "framework/KMCAgoraARTC.framework"
+  s.dependency "AgoraAudio_iOS", "1.10.0"
+  s.dependency "UICKeyChainStore", "2.1.1"
 end
